@@ -17,10 +17,8 @@ pip install git+https://github.com/nestauk/ojd_daps_company_descriptions.git
 To use the extract_company_description function, you simply need to pass a sentence to it. The function returns a dictionary with a score indicating how likely the sentence is to be describing a company.
 
 ```python
-from ojd_daps_company_descriptions import extract_company_description
-
-sentence = "We are a manufacturing company specializing in innovative solutions."
-result = extract_company_description(sentence)
+import ojd_daps_company_descriptions
+result = ojd_daps_company_descriptions.extract_company_descriptions("we are a manufactoring organisation")
 
 print(result)
 [{'label': 'LABEL_1', 'score': 0.9953641891479492}]
@@ -37,14 +35,14 @@ Assuming you have a pandas DataFrame `job_ads` with a column `description` that 
 
 ```python
 import pandas as pd
-from company_description_extractor import extract_company_description
+import ojd_daps_company_descriptions
 
 # Assuming `job_ads` is your DataFrame and `description` is the column with job descriptions
 def extract_description_scores(description_text):
     sentences = description_text.split('.')
     scores = []
     for sentence in sentences:
-        score = extract_company_description(sentence)[0]['score']
+        score = ojd_daps_company_descriptions.extract_company_description(sentence)[0]['score']
         scores.append((sentence, score))
     return scores
 
