@@ -28,7 +28,7 @@ print(result)
 
 The output will be a dictionary, where the score ranges from 0 to 1. A higher score suggests a higher likelihood that the sentence is a company description.
 
-### Working with Job Adverts
+### Working with Online Job Adverts
 
 When dealing with job adverts, which typically consist of multiple sentences with only some referring to the company description, you can utilize the library in conjunction with pandas to efficiently process and extract relevant descriptions.
 
