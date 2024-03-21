@@ -4,7 +4,7 @@ OJD DAPS Company Description Classifier is a Python library powered by a fine-tu
 
 ## Installation
 
-This library can be installed using pip. Ensure you have Python 3.10 or newer installed on your system before proceeding.
+This library can be installed using pip. Ensure you are using Python 3.10 or newer on your system before proceeding.
 
 ```bash
 pip install git+https://github.com/nestauk/ojd_daps_company_descriptions.git
