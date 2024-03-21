@@ -35,6 +35,6 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
 nav:
-  - Home: README.md
+  - Home: docs/index.md
 plugins:
   - same-dir
