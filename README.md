@@ -57,7 +57,7 @@ This approach splits the job description into sentences and applies the extract_
 
 ## Methodology
 
-To see how we trained our model, details on its performance, and code relating to producing our training set, please refer to our doumentation [here](https://github.com/nestauk/ojd_daps_language_models/company_descriptions/README.md).
+To see how we trained our model, details on its performance, and code relating to producing our training set, please refer to our doumentation [here](https://github.com/nestauk/ojd_daps_language_models/company_descriptions/README.md) for more information.
 
 ## License
 
