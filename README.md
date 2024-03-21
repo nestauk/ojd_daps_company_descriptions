@@ -61,4 +61,4 @@ To see how we trained our model, details on its performance, and code relating t
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details on this.
