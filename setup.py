@@ -17,7 +17,6 @@ setup(
     long_description=open(BASE_DIR / "README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     version='0.1.0',
-    packages=find_packages(),
     install_requires=read_lines(BASE_DIR / "requirements.txt"),
     extras_require={"dev": read_lines(BASE_DIR / "requirements_dev.txt")},
     packages=find_packages(
