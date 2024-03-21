@@ -1,12 +1,10 @@
-name: Deploy Docs
+name: Deploy docs to gh-pages
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - main  # Or your default branch, e.g., master
-    paths:
-      - 'docs/**'
-      - 'mkdocs.yml'
+      - dev
 
 jobs:
   build:
@@ -21,14 +19,14 @@ jobs:
         with:
           python-version: 3.8
 
-      - name: Install dependencies
-        run: |
-          $CONDA/bin/python -m pip install --upgrade pip
-          $CONDA/bin/python -m pip install mkdocs-material
+      # - name: Install dependencies
+      #   run: |
+      #     $CONDA/bin/python -m pip install --upgrade pip
+      #     $CONDA/bin/python -m pip install mkdocs-material
 
       - name: Deploy
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CONFIG_FILE: mkdocs.yml
-
+          REQUIREMENTS: docs/requirements.txt
