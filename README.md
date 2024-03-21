@@ -18,7 +18,7 @@ To use the extract_company_description function, you simply need to pass a sente
 
 ```python
 import ojd_daps_company_descriptions
-ojd_daps_company_descriptions.extract_company_descriptions("we are a manufactoring organisation")
+result = ojd_daps_company_descriptions.extract_company_descriptions("we are a manufactoring organisation")
 
 print(result)
 [{'label': 'LABEL_1', 'score': 0.9953641891479492}]
