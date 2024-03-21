@@ -4,7 +4,7 @@ OJD DAPS Company Description Classifier is a Python library powered by a fine-tu
 
 ## Installation
 
-This library can be installed using pip. Ensure you have Python 3.10 or newer installed on your system before proceeding.
+This library can be installed using pip. Ensure you have Python 3.10.0 or newer installed on your system before proceeding.
 
 ```bash
 pip install git+https://github.com/nestauk/ojd_daps_company_descriptions.git
@@ -28,7 +28,7 @@ print(result)
 
 The output will be a dictionary, where the score ranges from 0 to 1. A higher score suggests a higher likelihood that the sentence is a company description.
 
-### Working with Job Adverts
+### Working with Online Job Adverts
 
 When dealing with job adverts, which typically consist of multiple sentences with only some referring to the company description, you can utilize the library in conjunction with pandas to efficiently process and extract relevant descriptions.
 
@@ -57,7 +57,7 @@ This approach splits the job description into sentences and applies the extract_
 
 ## Methodology
 
-To see how we trained our model, details on its performance, and code relating to producing our training set, please refer to our doumentation [here](https://github.com/nestauk/ojd_daps_language_models/company_descriptions/README.md).
+To see how we trained our model, details on its performance, and code relating to producing our training set, please refer to our doumentation [here](https://github.com/nestauk/ojd_daps_language_models/company_descriptions/README.md) for more information.
 
 ## License
 
